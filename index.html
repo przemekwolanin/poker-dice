@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta name="viewport" value="device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <title>Poker Dice</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.min.css">
+  </head>
+  <body>
+    <div class="flex h100p">
+      <div id="playground" class="playground">
+        <div id="hud" class="hud flex">
+          <div class="elem">
+            Gracz: <span id="current-player" class="current-player"></span>
+          </div>
+        </div>
+        <div id="dice1" class="dice dice1">1</div>
+        <div id="dice2" class="dice dice2">2</div>
+        <div id="dice3" class="dice dice3">3</div>
+        <div id="dice4" class="dice dice4">4</div>
+        <div id="dice5" class="dice dice5">5</div>
+        <button class="throw">Rzut!</button>
+        <button class="change-player">Zmień gracza</button>
+        <div class="hold">
+          <div class="flex">
+            <div id="hold-dice1" class="hold-dice hold-dice-1"><span>Miejsce na kość...</span></div>
+            <div id="hold-dice2" class="hold-dice hold-dice-2"><span>Miejsce na kość...</span></div>
+            <div id="hold-dice3" class="hold-dice hold-dice-3"><span>Miejsce na kość...</span></div>
+            <div id="hold-dice4" class="hold-dice hold-dice-4"><span>Miejsce na kość...</span></div>
+            <div id="hold-dice5" class="hold-dice hold-dice-5"><span>Miejsce na kość...</span></div>
+          </div>
+        </div>
+      </div>
+      <div id="players-tables" class="players-tables">
+        <div class="tabs-heading">
+          <div class="flex">
+            <div id="player-0-name">
+              Ja
+            </div>
+            <div id="player-1-name">
+              On
+            </div>
+        </div>
+      </div>
+    </div>
+    <div id="greyWall" class="greyWall">
+      <div id="message" class="message">
+        <div id="title" class="title">Tytuł wiadomości</div>
+        <div id="description" class="description">Treść wiadomości</div>
+        <button class="close">Zamknij</button>
+      </div>
+    </div>
+    <div id="fading-alert" class="fading-alert">
+      <span id="fading-alert-txt" class="fading-alert-txt">TEST</span>
+    </div>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
